@@ -17,7 +17,7 @@ The code to run STNN is main_pytorch_golden.py, and the code to run CNN is main_
 
 ## Description of each file in the repository：
 - model_save folder: for saving trained models；
-- data folder: the data of subject No. 17 and subject No. 23 are stored;
+- data folder: put the data of subject No. 17 and subject No. 23 here, can be downloaded from [dropbox](https://www.dropbox.com/sh/3lrvv470irirfu6/AADUP6ji2EHBySiz_zGaUP5qa?dl=0);
 - cnn.log: save the training process and results on the CNN model for subject No. 23;
 - golden.log: save the training process and results of the 23 subjects' data on the STNN model;
 - main_pytorch_cnn.py: code to train the CNN model, line 171 is used to save the training model;

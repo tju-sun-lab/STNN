@@ -16,7 +16,7 @@
 
 ## 文件夹中各文件说明：
 - model_save文件夹：用于保存训练模型；
-- data文件夹：存储有17号被试数据和23号被试数据；
+- data文件夹：17号被试数据和23号被试数据放在这里，可在[dropbox](https://www.dropbox.com/sh/3lrvv470irirfu6/AADUP6ji2EHBySiz_zGaUP5qa?dl=0)下载；
 - cnn.log：保存有在2022年10月14日，23号被试数据在CNN模型上的训练过程和结果；
 - golden.log: 保存有在2022年10月14日，23号被试数据在STNN模型上的训练过程和结果；
 - main_pytorch_cnn.py：用于训练CNN代码，第171行用于保存训练模型；
