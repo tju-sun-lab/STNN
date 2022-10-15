@@ -1,24 +1,27 @@
-## 代码说明
+English | [简体中文](https://github.com/missuo/XrayR-V2Board/blob/main/README_CN.md)
+
+## Description
 Source code for the paper: [B Sun, Z Wu, Y Hu, T Li, Golden subject is everyone: A subject transfer neural network for motor imagery-based brain computer interfaces, Neural Networks 151, 111-120, 2022](https://www.sciencedirect.com/science/article/abs/pii/S0893608022001034).
 
-在当前的仓库中，我们提供了23号被试(该被试经过我们其他算法证明该被试的效果的确很糟糕)的数据和标签，此外还提供了17号被试(黄金被试)的数据和标签。论文中的其他被试数据暂未开源，如有需要请联系作者。你也可以很方便的在自己的数据集上使用本代码。
+In the current repository, we provide the data and labels for subject No. 23 (which has been proven by our other algorithms that the subject's effect is indeed bad), in addition to the data and labels for subject No. 17 (the gold subject). The data of other subjects in the paper are not open source at the moment, so please contact the authors if you need them. You can also easily use this code on your own dataset.
 
-我们在23号被试上重新进行了CNN和STNN的测试，其训练过程和结果分别保存在了CNN.log和golden.log文件中。结果显示，23号被试在CNN上测试结果约为67.8%，在STNN上测试结果为72.5%。
+We test the CNN and STNN on subject No. 23, whose training process and results were saved in the CNN.log and golden.log files, respectively. The results showed that the test result on CNN for subject No. 23 was about 67.8%, and the test result on STNN was 72.5%.
 
-运行STNN代码为main_pytorch_golden.py，运行CNN的代码为main_pytorch_cnn.py。
+The code to run STNN is main_pytorch_golden.py, and the code to run CNN is main_pytorch_cnn.py.
 
-## 如何运行STNN代码：
+## How to run the STNN code:
 
-1. 为了方便您的测试，首先我们提供了17号被试在CNN上的一个训练模型，保存在了model_save文件夹下，因此您可以将该训练模型加载到main_pytorch_golden.py中并直接运行STNN的代码。
-2. 其次您可以先用CNN训练17号被试的数据和代码，注意要保存其模型，并将您训练的模型加载到main_pytorch_golden.py中并运行。
+1. In order to run STNN, a CNN model needs to be trained first.
+2. To facilitate your testing, first we provide a pretrained model for subject No.17 using CNN, saved in the model_save folder, so you can load this pretrained model into main_pytorch_golden.py and run the STNN code directly.
+3. Alternatively, you can first train your own CNN model with the data from subject No. 17, taking care to save the model and load your trained model into main_pytorch_golden.py to run STNN.
 
-## 文件夹中各文件说明：
-- model_save文件夹：用于保存训练模型；
-- data文件夹：存储有17号被试数据和23号被试数据；
-- cnn.log：保存有在2022年10月14日，23号被试数据在CNN模型上的训练过程和结果；
-- golden.log: 保存有在2022年10月14日，23号被试数据在STNN模型上的训练过程和结果；
-- main_pytorch_cnn.py：用于训练CNN代码，第171行用于保存训练模型；
-- main_pytorch_golden.py: 用于训练STNN代码，第89行用于加载17号被试的训练模型；
-- nnModelST_pytorch.py：写有CNN模型；
-- G_D.py：写有STNN的generator部分和CNN部分；
-- tools_golden_subject.py：加载STNN模型的数据。
+## Description of each file in the repository：
+- model_save folder: for saving trained models；
+- data folder: the data of subject No. 17 and subject No. 23 are stored;
+- cnn.log: save the training process and results on the CNN model for subject No. 23;
+- golden.log: save the training process and results of the 23 subjects' data on the STNN model;
+- main_pytorch_cnn.py: code to train the CNN model, line 171 is used to save the training model;
+- main_pytorch_golden.py: code to train the STNN model, line 89 is used to load the training model for subject No. 17;
+- nnModelST_pytorch.py: CNN model architecture;
+- G_D.py: STNN model architecture;
+- tools_golden_subject.py: dataloaders for STNN.
