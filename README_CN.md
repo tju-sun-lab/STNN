@@ -1,3 +1,5 @@
+English(https://github.com/tju-sun-lab/stnn/blob/main/README.md) | 简体中文
+
 ## 代码说明
 论文源代码: [B Sun, Z Wu, Y Hu, T Li, Golden subject is everyone: A subject transfer neural network for motor imagery-based brain computer interfaces, Neural Networks 151, 111-120, 2022](https://www.sciencedirect.com/science/article/abs/pii/S0893608022001034).
 

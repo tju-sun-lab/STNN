@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/missuo/XrayR-V2Board/blob/main/README_CN.md)
+English | [简体中文](https://github.com/tju-sun-lab/stnn/blob/main/README_CN.md)
 
 ## Description
 Source code for the paper: [B Sun, Z Wu, Y Hu, T Li, Golden subject is everyone: A subject transfer neural network for motor imagery-based brain computer interfaces, Neural Networks 151, 111-120, 2022](https://www.sciencedirect.com/science/article/abs/pii/S0893608022001034).
