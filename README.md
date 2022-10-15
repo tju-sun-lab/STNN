@@ -1,7 +1,7 @@
 ## 代码说明
 Source code for the paper: [B Sun, Z Wu, Y Hu, T Li, Golden subject is everyone: A subject transfer neural network for motor imagery-based brain computer interfaces, Neural Networks 151, 111-120, 2022](https://www.sciencedirect.com/science/article/abs/pii/S0893608022001034).
 
-在这个测试文件当中，我们提供了23号被试(该被试经过我们其他算法证明该被试的效果的确很糟糕)的数据和标签，此外还提供了17号被试(黄金被试)的数据和标签。
+在当前的仓库中，我们提供了23号被试(该被试经过我们其他算法证明该被试的效果的确很糟糕)的数据和标签，此外还提供了17号被试(黄金被试)的数据和标签。论文中的其他被试数据暂未开源，如有需要请联系作者。你也可以很方便的在自己的数据集上使用本代码。
 
 我们在23号被试上重新进行了CNN和STNN的测试，其训练过程和结果分别保存在了CNN.log和golden.log文件中。结果显示，23号被试在CNN上测试结果约为67.8%，在STNN上测试结果为72.5%。
 
