@@ -9,13 +9,13 @@ We test the CNN and STNN on subject No. 23, whose training process and results w
 
 The code to run STNN is main_pytorch_golden.py, and the code to run CNN is main_pytorch_cnn.py.
 
-## How to run the STNN code:
+## How to run the STNN code
 
 1. In order to run STNN, a CNN model needs to be trained first.
 2. To facilitate your testing, first we provide a pretrained model for subject No.17 using CNN, saved in the model_save folder, so you can load this pretrained model into main_pytorch_golden.py and run the STNN code directly.
 3. Alternatively, you can first train your own CNN model with the data from subject No. 17, taking care to save the model and load your trained model into main_pytorch_golden.py to run STNN.
 
-## Description of each file in the repository：
+## Description of each file in the repository
 - model_save folder: for saving trained models；
 - data folder: put the data of subject No. 17 and subject No. 23 here, can be downloaded from [dropbox](https://www.dropbox.com/sh/3lrvv470irirfu6/AADUP6ji2EHBySiz_zGaUP5qa?dl=0);
 - cnn.log: save the training process and results on the CNN model for subject No. 23;

@@ -9,12 +9,12 @@
 
 运行STNN代码为main_pytorch_golden.py，运行CNN的代码为main_pytorch_cnn.py。
 
-## 如何运行STNN代码：
+## 如何运行STNN代码
 1. 为了运行STNN，需要先训练一个CNN模型。
 2. 为了方便您的测试，首先我们提供了17号被试在CNN上的一个预训练模型，保存在了model_save文件夹下，因此您可以将该预训练模型加载到main_pytorch_golden.py中并直接运行STNN的代码。
 3. 或者，您可以先用17号被试的数据训练你自己的CNN模型，注意要保存模型，并将您训练好的模型加载到main_pytorch_golden.py中以运行STNN。
 
-## 文件夹中各文件说明：
+## 文件夹中各文件说明
 - model_save文件夹：用于保存训练模型；
 - data文件夹：17号被试数据和23号被试数据放在这里，可在[dropbox](https://www.dropbox.com/sh/3lrvv470irirfu6/AADUP6ji2EHBySiz_zGaUP5qa?dl=0)下载；
 - cnn.log：保存有在2022年10月14日，23号被试数据在CNN模型上的训练过程和结果；
